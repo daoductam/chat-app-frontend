@@ -65,7 +65,7 @@ const ChatArea = () => {
                 return newSet;
             });
 
-            const socket = new SockJS('wss://chat-app-v1-zh6h.onrender.com/ws');
+            const socket = new SockJS('wss://chat-app-4-uji1.onrender.com/ws');
             stompClient.current = Stomp.over(socket);
 
             stompClient.current.connect({

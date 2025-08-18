@@ -34,7 +34,7 @@ const PrivateChat = ({
         const loadMessageHistory = async () => {
             try {
                 const response = await fetch(
-                    `https://chat-app-v1-zh6h.onrender.com//api/messages/private?user1=${currentUser}&user2=${recipientUser}`
+                    `https://chat-app-4-uji1.onrender.com/api/messages/private?user1=${currentUser}&user2=${recipientUser}`
         
                 );
                 if(response.ok && isMounted) {
