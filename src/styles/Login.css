@@ -1,0 +1,95 @@
+/* Container căn giữa */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px); /* trừ navbar nếu có */
+  background: #f5f7fa;
+  padding: 20px;
+}
+
+/* Box Login */
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 420px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Header */
+.login-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.login-header p {
+  margin-top: 5px;
+  font-size: 0.95rem;
+  color: #777;
+  text-align: center;
+}
+
+/* Form */
+.login-form {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input */
+.username-input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.username-input:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(74,144,226,0.2);
+}
+
+/* Button */
+.login-btn {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover:not(:disabled) {
+  background: #357ab8;
+}
+
+.login-btn:disabled {
+  background: #a6c8f0;
+  cursor: not-allowed;
+}
+
+/* Message */
+.auth-message {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Hiệu ứng fade in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

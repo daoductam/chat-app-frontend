@@ -1,0 +1,73 @@
+/* Container */
+.mainpage-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px); /* trừ navbar nếu có */
+  background: linear-gradient(135deg, #4a90e2, #6fb1fc);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Title */
+.mainpage-title {
+  font-size: 2.2rem;
+  max-width: 800px;
+  margin-bottom: 40px;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+/* Button group */
+.mainpage-button {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Base button */
+.btn {
+  padding: 14px 28px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+/* Hover effect */
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Primary button */
+.btn-primary {
+  background: #ffffff;
+  color: #4a90e2;
+}
+
+.btn-primary:hover {
+  background: #f2f2f2;
+}
+
+/* Secondary button */
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
