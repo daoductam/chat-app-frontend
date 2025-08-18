@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = 'https://chat-app-4-uji1.onrender.com';
+const API_URL = 'https://chat-app-v1-zh6h.onrender.com';
 
 const api = axios.create({
     baseURL: API_URL,
